@@ -89,9 +89,8 @@ with open(verdict_file, 'r') as f:
     for line in f:
         # Split the line into a test case formatted ID and a result
         case_id, verdict = line.strip().split(':')        
+        case_id = normalize(case_id)
 
-        # Do some normalization.
-        case_id = case_id.upper()
         if valid_formatted_id(formatted_id=case_id, prefix='TC') == False:
             print('Tesst case formatted ID is invalid: %s' % (case_id))
             continue
