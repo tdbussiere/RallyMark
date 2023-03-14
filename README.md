@@ -17,5 +17,5 @@ RallyMark only adds new results if a test case does not already have a result.
 * RallyMark will skip test cases that already have results.
 * RallyMark will skip the currently processing test case, but not abort, if the test case is malformed or does not exist.
 * Currently cannot run without a test set. All test case results must be attached to a test set.
-* RallyMark will use the current user to set the `Tester` field. Currently in API mode this does not work and will be fixed soon.
+* RallyMark will use the current user to set the `Tester` field. Currently in API key mode this does not work and will be fixed soon.
 * Untested on macOS.
